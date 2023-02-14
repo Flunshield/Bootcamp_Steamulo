@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "livres",
+  "info": {
+    "singularName": "livre",
+    "pluralName": "livres",
+    "displayName": "Livre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "editionDate": {
+      "type": "date"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}
